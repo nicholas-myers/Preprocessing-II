@@ -225,9 +225,44 @@ header .navBar nav a {
   margin: 0 1%;
   text-decoration: none;
   text-align: center;
+  border-radius: 5px;
 }
 header .navBar nav a:hover {
   color: #17A2B8;
+  border-radius: 10px;
+  background-color: lightblue;
+  transition: 1s;
+  transition-timing-function: none;
+  padding: 3%;
+  font-size: 3rem;
+  animation-name: animation;
+}
+@keyframes animation {
+  0% {
+    background-color: red;
+    left: 0px;
+    top: 0px;
+  }
+  25% {
+    background-color: yellow;
+    left: 200px;
+    top: 0px;
+  }
+  50% {
+    background-color: blue;
+    left: 200px;
+    top: 200px;
+  }
+  75% {
+    background-color: green;
+    left: 0px;
+    top: 200px;
+  }
+  100% {
+    background-color: red;
+    left: 0px;
+    top: 0px;
+  }
 }
 .footer {
   width: 100%;
@@ -348,6 +383,42 @@ header .navBar nav a:hover {
   background-color: #17A2B8;
   color: #FFEBCD;
   font-size: 2rem;
+}
+.home .content-pick .destination button:hover {
+  border-radius: 10px;
+  background-color: darkblue;
+  transition: 1s;
+  transition-timing-function: none;
+  padding: none;
+  font-size: 3rem;
+  animation-name: animation;
+}
+@keyframes animation {
+  0% {
+    background-color: red;
+    left: 0px;
+    top: 0px;
+  }
+  25% {
+    background-color: yellow;
+    left: 200px;
+    top: 0px;
+  }
+  50% {
+    background-color: blue;
+    left: 200px;
+    top: 200px;
+  }
+  75% {
+    background-color: green;
+    left: 0px;
+    top: 200px;
+  }
+  100% {
+    background-color: red;
+    left: 0px;
+    top: 0px;
+  }
 }
 @media (max-width: 500px) {
   .home .content-pick .destination {
