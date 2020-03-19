@@ -168,6 +168,36 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+* {
+  border: 1px solid black !important;
+}
+header {
+  text-align: center;
+}
+header .navBar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 1%;
+  border-bottom: 2px dashed gray !important;
+}
+header .navBar nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 75%;
+}
+header .navBar nav a {
+  font-size: 2rem;
+}
+header .navBar h1 {
+  width: 25%;
+  text-align: center;
+}
+header img {
+  width: 85%;
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
