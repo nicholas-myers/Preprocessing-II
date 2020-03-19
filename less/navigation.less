@@ -11,9 +11,27 @@ header {
     padding: 1% 30%;
     border-bottom: 2px dashed gray !important;
 
+    @media @phone {
+      .flex(@wrap: wrap);
+      padding: 2%;
+    }
+
+    h1 {
+      width: 25%;
+      text-align: center;
+
+      @media @phone {
+        width: 75%;
+      }
+    } // closes h1
     nav {
       .flex(flex-end);
       width: 75%;
+
+      @media @phone {
+        .flex(space-around);
+        width: 100%;
+      }
 
       a {
         display: inline;
@@ -24,14 +42,9 @@ header {
         text-align: center;
         &:hover {
           color: @eastern-blue;
-        }
+        } //closes hover
       } //closes a
     } //closes nav
-
-    h1 {
-      width: 25%;
-      text-align: center;
-    } // closes h1
   } //closes .navBAr
 
   
