@@ -12,7 +12,7 @@ header {
     border-bottom: 2px dashed gray !important;
 
     nav {
-      .flex(flex-end, @wrap: none);
+      .flex(flex-end);
       width: 75%;
 
       a {
@@ -22,6 +22,9 @@ header {
         margin: 0 1%;
         text-decoration: none;
         text-align: center;
+        &:hover {
+          color: @eastern-blue;
+        }
       } //closes a
     } //closes nav
 

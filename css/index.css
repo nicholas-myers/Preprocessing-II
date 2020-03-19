@@ -175,7 +175,6 @@ header .navBar {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
   width: 100%;
   padding: 1% 30%;
   border-bottom: 2px dashed gray !important;
@@ -184,7 +183,6 @@ header .navBar nav {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  flex-wrap: none;
   width: 75%;
 }
 header .navBar nav a {
@@ -194,6 +192,9 @@ header .navBar nav a {
   margin: 0 1%;
   text-decoration: none;
   text-align: center;
+}
+header .navBar nav a:hover {
+  color: #17A2B8;
 }
 header .navBar h1 {
   width: 25%;
@@ -258,4 +259,12 @@ header .navBar h1 {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+.home .content-pick .destination button {
+  width: 100%;
+  padding: 5%;
+  border-radius: 10px;
+  background-color: #17A2B8;
+  color: #FFEBCD;
+  font-size: 2rem;
 }
