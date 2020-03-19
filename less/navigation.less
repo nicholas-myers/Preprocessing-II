@@ -1,1 +1,53 @@
 // Navigation Styles here
+
+* {
+  // border: 1px solid black !important;
+}
+
+header {
+  .navBar {
+    .flex();
+    width: 100%;
+    padding: 1% 30%;
+    border-bottom: 2px dashed gray !important;
+
+    @media @phone {
+      .flex(@wrap: wrap);
+      padding: 2%;
+    }
+
+    h1 {
+      width: 25%;
+      text-align: center;
+
+      @media @phone {
+        width: 75%;
+      }
+    } // closes h1
+    nav {
+      .flex(flex-end);
+      width: 75%;
+
+      @media @phone {
+        .flex(space-around);
+        width: 100%;
+      }
+
+      a {
+        display: inline;
+        font-size: 2rem;
+        padding: 2%;
+        margin: 0 1%;
+        text-decoration: none;
+        text-align: center;
+        border-radius: 5px;
+        &:hover {
+          color: @eastern-blue;
+          .animation(lightblue, @padding: 3%);
+        } //closes hover
+      } //closes a
+    } //closes nav
+  } //closes .navBAr
+
+  
+} //closes header
