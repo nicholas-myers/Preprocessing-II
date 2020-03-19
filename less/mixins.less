@@ -1,7 +1,8 @@
 // Mixins in here
 
-.flex(@justify: center, @align: center) {
+.flex(@justify: center, @align: center, @wrap: wrap) {
     display: flex;
     justify-content: @justify;
     align-items: @align;
+    flex-wrap: @wrap;
 }

@@ -5,25 +5,42 @@
 }
 
 header {
-    text-align: center;
   .navBar {
     .flex();
     width: 100%;
-    padding: 1%;
+    padding: 1% 30%;
     border-bottom: 2px dashed gray !important;
+
     nav {
-      .flex(space-around);
+      .flex(flex-end, @wrap: none);
       width: 75%;
+
       a {
+        display: inline;
         font-size: 2rem;
+        padding: 1%;
+        margin: 0 1%;
+        text-decoration: none;
+        text-align: center;
       } //closes a
     } //closes nav
+
     h1 {
       width: 25%;
       text-align: center;
     } // closes h1
   } //closes .navBAr
-  img {
+
+  .title {
+    width: 100%;
+    .flex();
+
+    img {
       width: 85%;
-  }
+    } //close logo img
+
+    .titlePar {
+      width: 85%;
+    }
+  } // cllose .title
 } //closes header
